@@ -1,11 +1,28 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+h1 {
+  text-align: center;
+  border-bottom: 2px solid red;
+}
 .container {
 display: flex;
 flex-direction: column;
 align-items: center;
+border: 2px solid red;
+
 }
 button {
     margin-top: 10%;
     width: 15em;
     height: 5em;
     border-radius: 1em;
+}
+.leftHowTo{
+    border-top: 2px solid red;
 }
