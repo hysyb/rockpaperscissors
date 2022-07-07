@@ -1,6 +1,8 @@
 
 const rock = document.querySelector('.Rock');
-const result = document.querySelector('.result');
+let result = document.querySelector('.result');
+let playerScore = document.querySelector('.playerScore');
+let comScore = document.querySelector('.comScore');
 let winCount = 0;
 let loseCount = 0;
 rock.addEventListener('click', function(e){
@@ -25,10 +27,12 @@ function playRound(playerSelection){
         result.textContent = 'You Win!';
         winCount++;
         console.log(winCount);
+        playerScore.textContent = winCount;
     }
     else {
         console.log("You Lose!");
         result.textContent = 'You Lose!';
         loseCount++;
+        comScore.textContent = loseCount;
 }
 }
