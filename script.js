@@ -1,12 +1,20 @@
 
 const rock = document.querySelector('.Rock');
-let result = document.querySelector('.result');
-let playerScore = document.querySelector('.playerScore');
-let comScore = document.querySelector('.comScore');
+const paper = document.querySelector('.Paper');
+const scissors = document.querySelector('.Scissors');
+const result = document.querySelector('.result');
+const playerScore = document.querySelector('.playerScore');
+const comScore = document.querySelector('.comScore');
 let winCount = 0;
 let loseCount = 0;
 rock.addEventListener('click', function(e){
     playRound(1);
+})
+paper.addEventListener('click', function(e){
+    playRound(2);
+})
+scissors.addEventListener('click', function(e){
+    playRound(3);
 })
 
 function getRandomInt(max) {
